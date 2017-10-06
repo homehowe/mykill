@@ -2,6 +2,9 @@ package mykill;
 
 import static org.junit.Assert.fail;
 
+import java.util.Date;
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +22,10 @@ public class MyKillDaoTest {
 	
 	@Test
 	public void reduceNumber() throws Exception {
-		fail("Not yet implemented");
+		Date killTime = new Date();
+		int updateCount = myKillDao.reduceNumber(1000, killTime);
+		
+		System.out.println("success:" + updateCount);
 	}
 
 	@Test
@@ -33,7 +39,11 @@ public class MyKillDaoTest {
 
 	@Test
 	public void queryAll() throws Exception {
-		fail("Not yet implemented");
+		List<Mykill> mykills = myKillDao.queryAll(0, 1000);
+		
+		for(Mykill mykill : mykills) {
+			System.out.println(mykill);
+		}
 	}
 
 }
