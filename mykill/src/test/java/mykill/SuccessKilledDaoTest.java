@@ -29,7 +29,7 @@ public class SuccessKilledDaoTest {
 
 	@Test
 	public void queryByIdWithmykill() throws Exception {
-		SuccessKill successKill = successKilledDao.queryByIdWithmykill(1000, 18888888888L);
+		SuccessKill successKill = successKilledDao.queryByIdWithMykill(1000, 18888888888L);
 		
 		System.out.println(successKill.getSeckill());
 	}
