@@ -10,7 +10,7 @@
         VALUES (#{mykillId},#{userPhone},0)
     </insert>
 
-    <select id="queryByIdWithMykill" resultType="SuccessKilled">
+    <select id="queryByIdWithMykill" resultType="SuccessKill">
 
         <!--根据mykillId查询SuccessKilled对象，并携带Mykill对象-->
         <!--如何告诉mybatis把结果映射到SuccessKill属性同时映射到Mykill属性-->
