@@ -22,6 +22,6 @@ public interface SuccessKilledDao {
      * @param mykillId
      * @return
      */
-    SuccessKill queryByIdWithmykill(@Param("mykillId") long mykillId,@Param("userPhone") long userPhone);
+    SuccessKill queryByIdWithMykill(@Param("mykillId") long mykillId,@Param("userPhone") long userPhone);
 
 }

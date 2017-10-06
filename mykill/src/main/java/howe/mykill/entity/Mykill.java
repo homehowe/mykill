@@ -3,19 +3,19 @@ package howe.mykill.entity;
 import java.util.Date;
 
 public class Mykill {
-	private long seckillId;
+	private long mykillId;
 	private String name;
 	private int number;
 	private Date startTime;
 	private Date endTime;
 	private Date createTime;
 	
-	public long getSeckillId() {
-	    return seckillId;
+	public long getMykillId() {
+	    return mykillId;
 	}
 	
-	public void setSeckillId(long seckillId) {
-	    this.seckillId = seckillId;
+	public void setMykillId(long mykillId) {
+	    this.mykillId = mykillId;
 	}
 	
 	public String getName() {
@@ -60,8 +60,8 @@ public class Mykill {
 	
 	@Override
 	public String toString() {
-	    return "Seckill{" +
-	            "seckillId=" + seckillId +
+	    return "Mykill{" +
+	            "mykillId=" + mykillId +
 	            ", name='" + name + '\'' +
 	            ", number=" + number +
 	            ", startTime=" + startTime +
