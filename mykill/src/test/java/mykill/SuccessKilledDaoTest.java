@@ -1,17 +1,12 @@
 package mykill;
 
-import java.util.Date;
-import java.util.List;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import howe.mykill.dao.MyKillDao;
 import howe.mykill.dao.SuccessKilledDao;
-import howe.mykill.entity.Mykill;
 import howe.mykill.entity.SuccessKill;
 
 @RunWith(SpringJUnit4ClassRunner.class)
